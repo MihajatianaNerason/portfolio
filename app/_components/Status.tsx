@@ -7,7 +7,7 @@ export const Status = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-4">
       <div className="flex-[3] w-full">
-        <Card className="w-full p-4 flex flex-col gap-2 w-full">
+        <Card className="w-full p-4 flex flex-col gap-2">
           <p className="text-lg text-muted-foreground">Side, fun projects</p>
           <div className="flex flex-col gap-4">
             {SIDE_PROJECTS.map((project, index) => {
@@ -110,7 +110,7 @@ type WorkProps = {
 
 const Work = (props: WorkProps) => {
   return (
-    <div className="inline-flex items-center gap-4 bg-accent/25 hover:bg-accent/50 transition-colors p-1 rounded">
+    <Card className="p-3 bg-accent/10 inline-flex items-center gap-4  hover:bg-accent/50 transition-colors p-1 rounded">
       <img
         src={props.image}
         alt={props.title}
@@ -123,7 +123,7 @@ const Work = (props: WorkProps) => {
       <div className="ml-auto">
         <p className="text-sm text-muted-foreground">{props.date}</p>
       </div>
-    </div>
+    </Card>
   );
 };
 
@@ -136,7 +136,7 @@ type EducationProps = {
 
 const Education = (props: EducationProps) => {
   return (
-    <div className="inline-flex items-center gap-4  bg-accent/25 hover:bg-accent/50 transition-colors p-1 rounded">
+    <Card className="p-3 bg-accent/10 inline-flex items-center gap-4  hover:bg-accent/50 transition-colors p-1 rounded">
       <img
         src={props.image}
         alt={props.title}
@@ -149,6 +149,6 @@ const Education = (props: EducationProps) => {
       <div className="ml-auto">
         <p className="text-sm text-muted-foreground">{props.date}</p>
       </div>
-    </div>
+    </Card>
   );
 };

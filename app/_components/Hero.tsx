@@ -1,22 +1,9 @@
 import { Section } from "./Section";
 import Image from "next/image";
 import profile from "../../public/profile.jpeg";
-import { ComponentPropsWithoutRef } from "react";
-import { cn } from "@/lib/utils";
 import { ReactIcon } from "./icons/ReactIcon";
 import { YoutubeIcon } from "./icons/YoutubeIcon";
-
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
-  return (
-    <span
-      className={cn(
-        "bg-accent/30 border hover:bg-accent/50 transition-colors border-accent px-1 py-0.5 text-primary rounded-md",
-        className,
-      )}
-      {...props}
-    />
-  );
-};
+import { Code } from "./Code";
 
 export const Hero = () => {
   return (
