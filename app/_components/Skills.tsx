@@ -1,9 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Section } from "./Section";
 import { LaravelIcon } from "./icons/LaravelIcon";
-import { MongoDbIcon } from "./icons/MongoDbIcon";
-import { MysqlIcon } from "./icons/MysqlIcon";
-import { TailwindIcon } from "./icons/TailwindIcon";
 import { ReactIcon } from "./icons/ReactIcon";
 import { Code } from "./Code";
 import { DatabaseLogo } from "./icons/DatabaseLogo";
