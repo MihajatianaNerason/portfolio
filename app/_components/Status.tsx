@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
-import { Badge, Code, LucideIcon, Rss, StickyNote } from "lucide-react";
+import { Badge, Code, Rss, StickyNote } from "lucide-react";
+import { Education } from "./Education";
+import { Work, WorkProps } from "./Work";
+import { SideProject, SideProjectProps } from "./SideProject";
 
 export const Status = () => {
   return (
@@ -72,26 +75,6 @@ const SIDE_PROJECTS: SideProjectProps[] = [
   },
 ];
 
-type SideProjectProps = {
-  Logo: LucideIcon;
-  title: string;
-  description: string;
-};
-
-const SideProject = (props: SideProjectProps) => {
-  return (
-    <div className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
-      <span className="bg-accent text-accent-foreground p-3 rounded-sm">
-        <props.Logo size={16} />
-      </span>
-      <div>
-        <p className="text-lg font-semibold">{props.title}</p>
-        <p className="text-sm text-muted-foreground">{props.description}</p>
-      </div>
-    </div>
-  );
-};
-
 const WORKS: WorkProps[] = [
   {
     image: "https://youngdev.mg/_next/static/media/logo.5e85c4e6.svg",
@@ -100,55 +83,3 @@ const WORKS: WorkProps[] = [
     date: "2023",
   },
 ];
-
-type WorkProps = {
-  image: string;
-  title: string;
-  role: string;
-  date: string;
-};
-
-const Work = (props: WorkProps) => {
-  return (
-    <Card className="p-3 bg-accent/10 inline-flex items-center gap-4  hover:bg-accent/50 transition-colors p-1 rounded">
-      <img
-        src={props.image}
-        alt={props.title}
-        className="w-10 h-10 object-contain rounded-md"
-      />
-      <div>
-        <p className="text-lg font-semibold">{props.title}</p>
-        <p className="text-xs text-muted-foreground">{props.role}</p>
-      </div>
-      <div className="ml-auto">
-        <p className="text-sm text-muted-foreground">{props.date}</p>
-      </div>
-    </Card>
-  );
-};
-
-type EducationProps = {
-  image: string;
-  title: string;
-  grade: string;
-  date: string;
-};
-
-const Education = (props: EducationProps) => {
-  return (
-    <Card className="p-3 bg-accent/10 inline-flex items-center gap-4  hover:bg-accent/50 transition-colors p-1 rounded">
-      <img
-        src={props.image}
-        alt={props.title}
-        className="w-10 h-10 object-contain rounded-md"
-      />
-      <div>
-        <p className="text-lg font-semibold">{props.title}</p>
-        <p className="text-xs text-muted-foreground">{props.grade}</p>
-      </div>
-      <div className="ml-auto">
-        <p className="text-sm text-muted-foreground">{props.date}</p>
-      </div>
-    </Card>
-  );
-};
