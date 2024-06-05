@@ -31,7 +31,8 @@ export const Hero = () => {
         <Image
           src={profile}
           className="w-full h-auto mx-xs max-md:w-56"
-          alt="mihaja's picture"
+          alt="Mihajatiana's picture"
+          style={{ borderRadius: "15%" }}
         />
       </div>
     </Section>
