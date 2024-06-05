@@ -1,6 +1,6 @@
 import { Section } from "./Section";
 import Image from "next/image";
-import profile from "../../public/profile.jpeg";
+import profile from "../../public/profile.jpg";
 import { ReactIcon } from "./icons/ReactIcon";
 import { YoutubeIcon } from "./icons/YoutubeIcon";
 import { Code } from "./Code";
@@ -10,7 +10,8 @@ export const Hero = () => {
     <Section className="flex max-md:flex-col items-start gap-4">
       <div className="flex-[3] w-full flex flex-col gap-2">
         <h2 className="font-caption font-bold text-5xl text-primary">
-          Mihajatiana Andriakotonerason
+          Mihajatiana <br />
+          <span className="text-4xl sm:text-5xl">Andriakotonerason</span>
         </h2>
         <h3 className="font-caption text-3xl">Student and developer</h3>
         <p className="text-base">
@@ -30,9 +31,8 @@ export const Hero = () => {
       <div className="flex-[2] max-md:m-auto ml-auto">
         <Image
           src={profile}
-          className="w-full h-auto mx-xs max-md:w-56"
+          className="w-[80%] h-auto mx-xs max-md:w-56 rounded-full"
           alt="Mihajatiana's picture"
-          style={{ borderRadius: "15%" }}
         />
       </div>
     </Section>
