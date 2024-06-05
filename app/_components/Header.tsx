@@ -7,9 +7,9 @@ import { LinkedInIcon } from "./icons/LinkedInIcon";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 py-4 ">
+    <header className="sticky top-0 py-4" style={{ zIndex: "999" }}>
       <Section className="flex items-baseline">
-        <h1 className="text-lg font-bold text-primary">Mihajatiana</h1>
+        <h1 className="text-lg font-bold text-primary">MT.</h1>
         <div className="flex-1" />
         <ul className="flex items-center gap-2">
           <Link

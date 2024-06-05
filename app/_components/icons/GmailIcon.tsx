@@ -7,8 +7,9 @@ export const GmailIcon = (
     <svg
       width={props.size}
       height={props.size}
-      viewBox="0 0 256 250"
+      viewBox="0 0 256 193"
       version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
       {...props}
     >
