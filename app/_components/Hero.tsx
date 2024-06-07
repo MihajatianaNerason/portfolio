@@ -26,6 +26,20 @@ export const Hero = () => {
           to get in touch with the new technology and some many Youtubers
           inspires me. And I live in <Code>Antananarivo - 🇲🇬</Code> .
         </p>
+        {/* <p className="text-base">
+          Welcome to my world of <Code>Web Development</Code>, where passion and
+          precision shape every line of code. Based in{" "}
+          <Code>Antananarivo - 🇲🇬</Code>, I create innovative digital
+          experiences with{" "}
+          <Code className="inline-flex items-center gap-1">
+            <ReactIcon size={16} className="inline" /> React
+          </Code>
+          , inspired by the latest trends on{" "}
+          <Code className="inline-flex items-center gap-1">
+            <YoutubeIcon size={16} className="inline" /> Youtube
+          </Code>
+          . Let&apos;s transform your ideas into dynamic web solutions.
+        </p> */}
       </div>
 
       <div className="flex-[2] max-md:m-auto ml-auto">

@@ -14,23 +14,24 @@ export const Header = () => {
         <ul className="flex items-center gap-2">
           <Link
             className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
-            href={"#"}
+            href={"https://github.com/MihajatianaNerason"}
           >
             <GithubIcon size={16} className="text-foreground" />
           </Link>
 
           <Link
             className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
-            href={"#"}
+            href={"/"}
           >
             <LinkedInIcon size={16} className="text-foreground" />
           </Link>
           <Link
+            href="/CV_ANDRIAKOTONERASON_Mihajatiana.pdf"
+            download={"CV_ANDRIAKOTONERASON_Mihajatiana.pdf"}
             className={cn(
-              buttonVariants({ variant: "secondary" }),
-              // "size-6 p-0",
+              buttonVariants({ variant: "outline" }),
+              "hover:bg-accent/50",
             )}
-            href={"#"}
           >
             Here my CV
           </Link>
